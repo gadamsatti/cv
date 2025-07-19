@@ -1,660 +1,1428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhil - Full Stack Developer & ML Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
-	<title>Akhil CV</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
-</head>
+    <!-- Modern CSS Framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light" id ="nav-links">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<!-- <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a> -->
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end" >
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="#skills">Skills </a></li>
-							<!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li> -->
-							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        --glass-bg: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+        --text-primary: #1a1a1a;
+        --text-secondary: #666;
+        --text-light: #ffffff;
+        --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.1);
+        --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.15);
+        --border-radius: 24px;
+        --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
 
-	<!--================ Start Home Banner Area =================-->
-	<div data-spy="scroll" data-target="#nav-links" data-offset="0">
-				
-	
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="banner_content">
-							<h3 class="text-uppercase">Hell0</h3>
-							<h1 class="text-uppercase">I am Gadamsetti Akhil</h1>
-							<h5 class="text-uppercase">Full Stack Web Developer and ML Engineer </h5>
-							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#contact"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="FInal CV.pdf" download = "CV"><span>Get CV</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        line-height: 1.7;
+        color: var(--text-primary);
+        background: #fafafa;
+        overflow-x: hidden;
+      }
 
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap" id = "about">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
-					</div>
-				</div>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
 
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<p>
-							
-Hello! 👋 I'm a Full Stack Developer with 2.5 years of experience, focusing on .NET backend and Angular frontend development. I'm dedicated to staying up-to-date with the latest tech trends and have a strong foundation in Machine Learning, backed by a Post Graduate Diploma and ongoing Master's studies in Machine Learning and AI.
-						</p>
-						<p>
-							I'm excited about the fusion of Full Stack Development and Machine Learning, as it offers limitless potential for innovative solutions that bridge traditional software with cutting-edge AI. If you share my passion for tech and innovation or want to collaborate on projects at this intersection, let's connect and explore the future of technology together!
-						</p>
-						<a class="primary_btn" href="FInal CV.pdf" download = "CV"><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End About Us Area =================-->
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
 
-	<!--================ Srart Brand Area =================-->
-	<section class="brand_area section_gap_bottom"  >
-		<div class="container" >
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="row" >
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo1.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo2.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo3.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo4.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo5.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo6.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="ml-15">
-								<h3>My Educational and Professional Journey</h3>
-							</div>					
-						</div>
-						
-						<!--<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo7.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo8.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo9.png" alt="">
-								</div>
-							</div>
-						</div> -->
-					</div>
-				</div>
-				<div class="offset-lg-2 col-lg-4 col-md-6">
-					<div class="client-info">
-						<div class="d-flex mb-50">
-							<span class="lage">2.5+</span>
-							<span class="smll">Years Experience Working</span>
-						</div>
-						<div class="call-now d-flex">
-							<div>
-								<span class="fa fa-envelope"></span>
-							</div>
-							<div class="ml-15">
-								<p>Mail me now</p>
-								<h3>gadamsatti@gmail.com</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Brand Area =================-->
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 4px;
+      }
 
-	<!--================ Start Features Area =================-->
-	<section class="features_area"  id="skills">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2 >Skills </h2>
-						<p>These are the skills I excel in, driving my success in the tech industry.<br>
-							Each of these capabilities represents my commitment to excellence and my ability to contribute effectively to projects.</p>
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #5a6fd8, #6a4190);
+      }
 
-					</div>
-				</div>
-			</div>
-			<div class="row feature_inner">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s1.png" alt="">
-						<h4>Web developing</h4>
-						<p>Expertise in Angular, .NET, and SQL for robust web solutions.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s2.png" alt="">
-						<h4>Data Analysis </h4>
-						<p>Analytical prowess to extract insights from data.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s3.png" alt="">
-						<h4>Machine Learning</h4>
-						<p>Extensive experience in various ML models, including regression and classification.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s4.png" alt="">
-						<h4>Power Apps</h4>
-						<p>Proficient in developing apps for efficient business processes.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Features Area =================-->
+      /* Navigation */
+      .navbar {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transition: var(--transition);
+        padding: 1rem 0;
+      }
 
-	<!--================Start Portfolio Area =================-->
-	<!-- <section class="portfolio_area" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title text-left">
-						<h2>quality work <br>
-							Recently done project </h2>
-					</div>
-				</div>
-			</div>
-			<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".Fullstack">Full stack </li>
-					<li data-filter=".MachineLearning"> Machine Learning </li>
-					<li data-filter=".OneGoing">One Going</li>
-				</ul>
-			</div>
-	
-			<div class="filters-content">
-				<div class="row portfolio-grid justify-content-center">
-					<div class="col-lg-4 col-md-6 all Fullstack">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="https://github.com/gadamsatti/LendingClubCaseStudy-1" target="_blank">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="https://github.com/gadamsatti/LendingClubCaseStudy-1">minimal design</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all Fullstack">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p2.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p2.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Paint wall</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all MachineLearning">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="https://github.com/gadamsatti/LendingClubCaseStudy-1" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">female light</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all MachineLearning">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p4.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">fourth air</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all OneGoing">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p6.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p5.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">together sign</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all OneGoing">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p5.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p6.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">multiply fowl</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all OneGoing">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p7.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p7.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">green heaven</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all MachineLearning">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p8.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p8.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4>fly male</h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all MachineLearning">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p9.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p9.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">season face</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--================End Portfolio Area =================-->
+      .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: var(--shadow-soft);
+      }
 
-	<!--================ Start Testimonial Area =================-->
-	<div class="testimonial_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>Work Experiences</h2>
-                     <p>Explore my professional journey, where I've applied my skills, contributed to projects, and honed my expertise in the ever-evolving tech landscape.</p>
+      .navbar-brand {
+        font-weight: 800;
+        font-size: 1.8rem;
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
 
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/logo4.png" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Zolo Stays</h4>
-									<p>At Zolostatys, I played a pivotal role in leveraging LeadSquared CRM to directly engage with customers and drive business growth. Working closely with clients, I contributed to the development of effective sales strategies, fostering valuable relationships, and ensuring successful outcomes for the company. </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/logo5.png" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Coginant</h4>
-									<p>I received comprehensive training in Dotnet and Angular as a full-stack developer and then transitioned into working on client projects. At Cognizant, I had the opportunity to create a Power App application for a client, leveraging Power BI for interactive dashboards and Power Automate for seamless workflow automation.</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/logo6.png" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Uniquode Applications Specialists LLP</h4>
-									<p>I'm a thriving Full Stack Developer at Uniquode, where I'm deeply involved in a dynamic project. I work with cutting-edge technologies like .NET, Angular, and SQL Server to deliver innovative solutions. My role involves problem-solving and contributing to the success of our team and clients. Being part of Uniquode is a privilege, as it allows me to work on inspiring projects and continue my growth as a Full Stack Developer.</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<!-- <div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div> -->
-        			<!-- <div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div> -->
-        			</div>
-        		</div>
-			</div>
-		</div>
-	</div>
-	<!--================ End Testimonial Area =================-->
+      .nav-link {
+        font-weight: 600;
+        color: var(--text-primary) !important;
+        position: relative;
+        padding: 0.5rem 1.5rem !important;
+        border-radius: 50px;
+        transition: var(--transition);
+        margin: 0 0.25rem;
+      }
 
-	<section class="contact_area section_gap" id ="contact">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>Contact Me </h2>
-						<p>Interested in collaborating on projects,
-						 hiring my expertise, or simply connecting? Feel free to reach out! 
-						 I'm always open to opportunities and eager to discuss how we can work together to achieve your goals</p>
-					</div>
-				</div>
-			</div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="contact_info">
-                        <div class="info_item">
-                            <i class="lnr lnr-home"></i>
-                            <h6>Bommuru , Rajahmundry</h6>
-                            <p>Andhra-Pradesh India </p>
-                        </div>
-                        <div class="info_item">
-                            <i class="lnr lnr-phone-handset"></i>
-                            <h6><a href="#">+91 7013204901</a></h6>
-                            <p>Mon to Fri 9am to 6 pm</p>
-                        </div>
-                        <div class="info_item">
-                            <i class="lnr lnr-envelope"></i>
-                            <h6><a href="#">gadamsatti@gmail.com</a></h6>
-                            <p>Send us your query anytime!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <form class="row contact_form"
-					action="https://api.sheetmonkey.io/form/vs1nUyx9ytzhuSFLLJZZSR" method="post" id="contactForm" novalidate="novalidate">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="EmailAddress" placeholder="Enter email address">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="Subject" placeholder="Enter Subject">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" name="Message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12 text-right">
-                            <button type="submit" value="submit" class="primary_btn">
-                                <span>Send Message</span>
-                            </button>
-                        </div>
-                    </form>
-				
-                </div>
-            </div>
+      .nav-link:hover {
+        background: var(--primary-gradient);
+        color: white !important;
+        transform: translateY(-2px);
+      }
+
+      .nav-link.active {
+        background: var(--primary-gradient);
+        color: white !important;
+      }
+
+      .navbar .btn-modern {
+        margin: 0.5rem 0;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+        border-radius: 50px;
+        background: var(--primary-gradient);
+        color: white !important;
+        border: none;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .navbar .btn-modern:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        color: white !important;
+      }
+
+      .navbar .btn-modern i {
+        margin-right: 0.5rem;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        min-height: 100vh;
+        background: var(--primary-gradient);
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        animation: float 20s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        color: white;
+      }
+
+      .hero-greeting {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        opacity: 0.9;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .hero-name {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+        background: linear-gradient(135deg, #ffffff, #f0f0f0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+        opacity: 0.9;
+        max-width: 600px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-modern {
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn-primary-modern {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      .btn-primary-modern:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-strong);
+        color: white;
+      }
+
+      .btn-secondary-modern {
+        background: white;
+        color: var(--text-primary);
+        border: 2px solid white;
+      }
+
+      .btn-secondary-modern:hover {
+        background: transparent;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .hero-image {
+        position: relative;
+        z-index: 10;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-strong);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      /* Floating Elements */
+      .floating-element {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        backdrop-filter: blur(10px);
+        animation: float 8s ease-in-out infinite;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .floating-element:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+      }
+
+      .floating-element:nth-child(2) {
+        width: 150px;
+        height: 150px;
+        top: 60%;
+        right: 15%;
+        animation-delay: 2s;
+      }
+
+      .floating-element:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        bottom: 20%;
+        left: 20%;
+        animation-delay: 4s;
+      }
+
+      /* Section Styling */
+      .section {
+        padding: 8rem 0;
+        position: relative;
+      }
+
+      .section-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-subtitle {
+        font-size: 1.3rem;
+        text-align: center;
+        color: var(--text-secondary);
+        margin-bottom: 4rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8;
+      }
+
+      /* About Section */
+      .about-section {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+
+      .about-image {
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--shadow-strong);
+      }
+
+      .about-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary-gradient);
+        opacity: 0.1;
+        z-index: 1;
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        transition: var(--transition);
+        position: relative;
+        z-index: 2;
+      }
+
+      .about-image:hover img {
+        transform: scale(1.05);
+      }
+
+      .about-content h2 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .about-content p {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+        line-height: 1.8;
+      }
+
+      /* Stats Section */
+      .stats-section {
+        background: var(--dark-gradient);
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .stats-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M20 20c0 11.046-8.954 20-20 20s-20-8.954-20-20 8.954-20 20-20 20 8.954 20 20z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .stat-item {
+        text-align: center;
+        padding: 3rem 1rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .stat-number {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff, #f0f0f0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .stat-label {
+        font-size: 1.3rem;
+        font-weight: 600;
+        opacity: 0.9;
+      }
+
+      /* Skills Section */
+      .skill-card {
+        background: white;
+        border-radius: var(--border-radius);
+        padding: 3rem 2rem;
+        text-align: center;
+        box-shadow: var(--shadow-soft);
+        transition: var(--transition);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .skill-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--primary-gradient);
+        transform: scaleX(0);
+        transition: var(--transition);
+      }
+
+      .skill-card:hover {
+        transform: translateY(-15px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .skill-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .skill-icon {
+        width: 100px;
+        height: 100px;
+        background: var(--primary-gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 2rem;
+        font-size: 2.5rem;
+        color: white;
+        transition: var(--transition);
+      }
+
+      .skill-card:hover .skill-icon {
+        transform: scale(1.1) rotate(5deg);
+      }
+
+      .skill-card h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: var(--text-primary);
+      }
+
+      .skill-card p {
+        color: var(--text-secondary);
+        line-height: 1.7;
+        font-size: 1.1rem;
+      }
+
+      /* Experience Section */
+      .experience-section {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+
+      .experience-card {
+        background: white;
+        border-radius: var(--border-radius);
+        padding: 3rem;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow-soft);
+        transition: var(--transition);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .experience-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--primary-gradient);
+        transform: scaleY(0);
+        transition: var(--transition);
+      }
+
+      .experience-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .experience-card:hover::before {
+        transform: scaleY(1);
+      }
+
+      .experience-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .experience-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-right: 2rem;
+        object-fit: contain;
+        box-shadow: var(--shadow-soft);
+        background: white;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .experience-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-company {
+        color: var(--primary-gradient);
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      .experience-description {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 1.1rem;
+      }
+
+      /* Education Section */
+      .education-section {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+
+      .education-card {
+        background: white;
+        border-radius: var(--border-radius);
+        padding: 3rem;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow-soft);
+        transition: var(--transition);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .education-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--accent-gradient);
+        transform: scaleY(0);
+        transition: var(--transition);
+      }
+
+      .education-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .education-card:hover::before {
+        transform: scaleY(1);
+      }
+
+      .education-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .education-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-right: 2rem;
+        object-fit: contain;
+        box-shadow: var(--shadow-soft);
+        background: white;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .education-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+      }
+
+      .education-institution {
+        color: var(--accent-gradient);
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      .education-description {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 1.1rem;
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--dark-gradient);
+        color: white;
+        padding: 4rem 0 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .footer-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .social-link {
+        width: 70px;
+        height: 70px;
+        background: var(--primary-gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        transition: var(--transition);
+        font-size: 1.5rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .social-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: var(--transition);
+      }
+
+      .social-link:hover {
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: var(--shadow-strong);
+      }
+
+      .social-link:hover::before {
+        left: 100%;
+      }
+
+      .footer-text {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 2rem;
+        position: relative;
+        z-index: 2;
+        font-size: 1.1rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-name {
+          font-size: 2.5rem;
+        }
+
+        .hero-title {
+          font-size: 1.3rem;
+        }
+
+        .section-title {
+          font-size: 2.5rem;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn-modern {
+          width: 100%;
+          max-width: 300px;
+          justify-content: center;
+        }
+
+        .floating-element {
+          display: none;
+        }
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Loading Animation */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Particle Effect */
+      .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .particle {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        animation: particle-float 15s infinite linear;
+        pointer-events: none;
+      }
+
+      @keyframes particle-float {
+        0% {
+          transform: translateY(100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Gadamsetti Akhil</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <!-- Particles -->
+      <div class="particles" id="particles"></div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1200">
+            <div class="hero-content">
+              <div class="hero-greeting">Hello 👋</div>
+              <h1 class="hero-name">I'm Gadamsetti Akhil</h1>
+              <div class="hero-title">
+                Full Stack Web Developer and ML Engineer
+              </div>
+              <div class="hero-buttons">
+                <a
+                  href="mailto:gadamsetti@gmail.com"
+                  class="btn-modern btn-primary-modern"
+                >
+                  <i class="fas fa-envelope"></i>
+                  Hire Me
+                </a>
+                <a
+                  href="https://github.com/gadamsatti"
+                  target="_blank"
+                  class="btn-modern btn-secondary-modern"
+                >
+                  <i class="fab fa-github"></i>
+                  View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1200">
+            <div class="text-center">
+              <img
+                src="img/banner/home-right.png"
+                alt="Akhil Profile"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-				
-	
-    </div>
 
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer_social">
-							<a href="https://www.linkedin.com/in/gadamsetti-akhil-89120b16a" target="_blank"><i class="fa fa-linkedin"></i></a>
-							<a href="https://github.com/gadamsatti" target="_blank"><i class="fa fa-github"></i></a>
-							<a href="https://www.instagram.com/akhil_founder/" target="_blank"><i class="fa fa-instagram"></i></a>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					Created By Gadamsetti Akhil
-                 </div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-	<script>
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent the form from actually submitting
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-8 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+              Let me introduce myself and share my journey in technology
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+            <div>
+              <img src="img/about-us.png" alt="About Akhil" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+            <div class="about-content">
+              <h2>Let's Introduce About Myself</h2>
+              <p>
+                Hello! 👋 I'm a Full Stack Developer with 4 years of
+                experience, focusing on .NET backend and Angular frontend
+                development. I'm dedicated to staying up-to-date with the latest
+                tech trends and have a strong foundation in Machine Learning,
+                backed by a Post Graduate Diploma and ongoing Master's studies
+                in Machine Learning and AI.
+              </p>
+              <p>
+                I'm excited about the fusion of Full Stack Development and
+                Machine Learning, as it offers limitless potential for
+                innovative solutions that bridge traditional software with
+                cutting-edge AI. If you share my passion for tech and innovation
+                or want to collaborate on projects at this intersection, let's
+                connect and explore the future of technology together!
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            // Simulate a successful submission (you can replace this with your actual submission logic)
-            // For demonstration purposes, we'll just show an alert.
-            alert("Form submitted successfully!");
+    <!-- Stats Section -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="stat-item">
+              <div class="stat-number">4+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="stat-item">
+              <div class="stat-number">9+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			this.submit();
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-8 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">
+              These are the skills I excel in, driving my success in the tech
+              industry. Each of these capabilities represents my commitment to
+              excellence and my ability to contribute effectively to projects.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Web Development</h4>
+              <p>
+                Expertise in Angular, .NET, and SQL for robust web solutions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h4>Data Analysis</h4>
+              <p>Analytical prowess to extract insights from data.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h4>Machine Learning</h4>
+              <p>
+                Extensive experience in various ML models, including regression
+                and classification.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Power Apps</h4>
+              <p>
+                Proficient in developing apps for efficient business processes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-8 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">
+              My academic journey across prestigious institutions, building a strong foundation in technology and artificial intelligence.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div
+              class="education-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="education-header">
+                <img
+                  src="img/brands/Liverpool.png"
+                  alt="Liverpool John Moores University"
+                  class="education-logo"
+                />
+                <div>
+                  <h4 class="education-title">Master's in Artificial Intelligence and Machine Learning</h4>
+                  <div class="education-institution">
+                    Liverpool John Moores University
+                  </div>
+                </div>
+              </div>
+              <p class="education-description">
+                Completed my Master's degree specializing in Artificial Intelligence and Machine Learning, gaining advanced knowledge in cutting-edge AI technologies and methodologies.
+              </p>
+            </div>
+
+            <div
+              class="education-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="education-header">
+                <img
+                  src="img/brands/iitb.png"
+                  alt="IIT Bombay"
+                  class="education-logo"
+                />
+                <div>
+                  <h4 class="education-title">Post Graduate Diploma in Artificial Intelligence and Machine Learning</h4>
+                  <div class="education-institution">
+                    IIT Bombay
+                  </div>
+                </div>
+              </div>
+              <p class="education-description">
+                Earned a Post Graduate Diploma from IIT Bombay, focusing on Artificial Intelligence and Machine Learning, building a strong foundation in advanced AI concepts and applications.
+              </p>
+            </div>
+
+            <div
+              class="education-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="education-header">
+                <img
+                  src="img/brands/LPU.png"
+                  alt="Lovely Professional University"
+                  class="education-logo"
+                />
+                <div>
+                  <h4 class="education-title">Bachelor of Technology</h4>
+                  <div class="education-institution">
+                    Lovely Professional University
+                  </div>
+                </div>
+              </div>
+              <p class="education-description">
+                Completed my Bachelor of Technology degree, establishing a solid foundation in engineering principles and technology fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-8 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">
+              Explore my professional journey, where I've applied my skills,
+              contributed to projects, and honed my expertise in the
+              ever-evolving tech landscape.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="experience-header">
+                <img
+                  src="img/brands/HCA.png"
+                  alt="HCA Healthcare"
+                  class="experience-logo"
+                />
+                <div>
+                  <h4 class="experience-title">Senior Backend Developer</h4>
+                  <div class="experience-company">
+                    HCA Healthcare India
+                  </div>
+                </div>
+              </div>
+              <p class="experience-description">
+                Working as a Senior Backend Developer where I build microservice architecture and enterprise-level applications. I focus on delivering the best solutions for complex healthcare systems, leveraging my expertise in scalable backend development to create robust and efficient applications that meet enterprise standards.
+              </p>
+            </div>
+
+            <div
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="experience-header">
+                <img
+                  src="img/brands/uniquode.png"
+                  alt="Uniquode"
+                  class="experience-logo"
+                />
+                <div>
+                  <h4 class="experience-title">Full Stack Developer</h4>
+                  <div class="experience-company">
+                    Uniquode Applications Specialists LLP
+                  </div>
+                </div>
+              </div>
+              <p class="experience-description">
+                I'm a thriving Full Stack Developer at Uniquode, where I'm
+                deeply involved in a dynamic project. I work with cutting-edge
+                technologies like .NET, Angular, and SQL Server to deliver
+                innovative solutions. My role involves problem-solving and
+                contributing to the success of our team and clients. Being part
+                of Uniquode is a privilege, as it allows me to work on inspiring
+                projects and continue my growth as a Full Stack Developer.
+              </p>
+            </div>
+
+            <div
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="experience-header">
+                <img
+                  src="img/brands/cognizant.png"
+                  alt="Cognizant"
+                  class="experience-logo"
+                />
+                <div>
+                  <h4 class="experience-title">Full Stack Developer</h4>
+                  <div class="experience-company">Cognizant</div>
+                </div>
+              </div>
+              <p class="experience-description">
+                I received comprehensive training in Dotnet and Angular as a
+                full-stack developer and then transitioned into working on
+                client projects. At Cognizant, I had the opportunity to create a
+                Power App application for a client, leveraging Power BI for
+                interactive dashboards and Power Automate for seamless workflow
+                automation.
+              </p>
+            </div>
+
+            <div
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="experience-header">
+                <img
+                  src="img/brands/zolo.png"
+                  alt="Zolo Stays"
+                  class="experience-logo"
+                />
+                <div>
+                  <h4 class="experience-title">Business Development</h4>
+                  <div class="experience-company">Zolo Stays</div>
+                </div>
+              </div>
+              <p class="experience-description">
+                At Zolostatys, I played a pivotal role in leveraging LeadSquared
+                CRM to directly engage with customers and drive business growth.
+                Working closely with clients, I contributed to the development
+                of effective sales strategies, fostering valuable relationships,
+                and ensuring successful outcomes for the company.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3 class="footer-title">Follow Me</h3>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/gadamsetti-akhil-89120b16a"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/gadamsatti"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/akhil_founder/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="mailto:gadamsetti@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <div class="footer-text">Created with ❤️ by Gadamsetti Akhil</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 100,
+        easing: "ease-out-cubic",
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
         });
-    </script>
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
-</body>
+      });
 
+      // Active navigation highlighting
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Particle effect
+      function createParticles() {
+        const particlesContainer = document.getElementById("particles");
+        const particleCount = 50;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.className = "particle";
+
+          const size = Math.random() * 4 + 2;
+          const left = Math.random() * 100;
+          const delay = Math.random() * 15;
+          const duration = Math.random() * 10 + 10;
+
+          particle.style.width = size + "px";
+          particle.style.height = size + "px";
+          particle.style.left = left + "%";
+          particle.style.animationDelay = delay + "s";
+          particle.style.animationDuration = duration + "s";
+
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      // Initialize particles
+      createParticles();
+
+      // Parallax effect for floating elements
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelectorAll(".floating-element");
+
+        parallax.forEach((element, index) => {
+          const speed = 0.5 + index * 0.1;
+          element.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+      });
+
+      // Add loading animation
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
 </html>
